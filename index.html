@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Shield | Cyberbullying Detection System</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<!-- Malayalam Font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<!-- Floating animation -->
+<div class="float c1"></div>
+<div class="float c2"></div>
+<div class="float c3"></div>
+
+
+<header>
+<h1>🛡️ Smart Shield</h1>
+<p>AI-Based Cyberbullying Detection System</p>
+</header>
+
+
+<section class="hero">
+<h2>Protect Online Conversations Using AI</h2>
+<button onclick="openChat()">Detect Cyberbullying</button>
+</section>
+
+
+<section class="features">
+
+<div class="card" onclick="showPanel('ai')">
+🤖 AI Analysis
+</div>
+
+<div class="card" onclick="showPanel('voice')">
+🎤 Voice Detection
+</div>
+
+<div class="card" onclick="showPanel('realtime')">
+⚡ Real-Time Analysis
+</div>
+
+<div class="card" onclick="showPanel('accuracy')">
+📊 Model Accuracy
+</div>
+
+<div class="card" onclick="showPanel('admin')">
+🔐 Admin Dashboard
+</div>
+
+<div class="card" onclick="showPanel('future')">
+🚀 Future Scope
+</div>
+
+</section>
+
+
+
+<!-- INFORMATION PANEL -->
+
+<div id="panel" class="panel">
+
+<span class="close" onclick="closePanel()">✖</span>
+
+<div id="panelContent"></div>
+
+</div>
+
+
+
+<!-- WARNING BOX -->
+
+<div id="warning" class="warning">
+
+⚠️ Cyberbullying Content Detected
+
+</div>
+
+
+
+<!-- CHATBOT WINDOW -->
+
+<div id="chatbot" class="chatbot">
+
+<div class="chat-header">
+
+Smart Shield Bot 🤖
+
+<span onclick="closeChat()">✖</span>
+
+</div>
+
+
+<div id="chat-box" class="chat-box"></div>
+
+
+<div class="chat-input">
+
+<input type="text" id="userInput" placeholder="Type message in Malayalam or English..." />
+
+<button onclick="startVoice()">🎤</button>
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+
+
+<footer>
+
+<p>© 2026 Smart Shield | Final Year Project</p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+</body>
+</html>
