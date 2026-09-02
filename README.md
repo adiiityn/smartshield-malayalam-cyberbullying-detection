@@ -256,6 +256,6 @@ Through this project, we explored:
 
 ## 📄 License
 
-This project is currently presented as a public portfolio and academic project.
+This project is currently presented as a public portfolio and academic project .
 
 No open-source license has been applied at this time.
